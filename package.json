@@ -1,0 +1,27 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Social-media application built using MERN",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayur1011/Social-media-app.git"
+  },
+  "author": "Mayur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mayur1011/Social-media-app/issues"
+  },
+  "homepage": "https://github.com/Mayur1011/Social-media-app#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongoose": "^6.0.14",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
