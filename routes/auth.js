@@ -9,6 +9,7 @@ router.get("/register", async (req, res) => {
     password: "123",
   });
   await user.save();
+
   res.send("Ok!");
 });
 
