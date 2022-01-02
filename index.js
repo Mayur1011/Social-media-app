@@ -10,8 +10,7 @@ const dotenv = require("dotenv");
 const morgan = require("morgan");
 const userRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
-app.use("/api/users", userRoute);
-app.use("/api/auth", authRoute);
+const postRoute = require("./routes/posts");
 dotenv.config();
 
 // mongoose.connect(
@@ -35,6 +34,11 @@ mongoose
 app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"));
+
+// routes
+app.use("/api/users", userRoute);
+app.use("/api/auth", authRoute);
+app.use("/api/posts", postRoute);
 
 app.get("/", (req, res) => {
   res.send("Welcome to homepage.");
